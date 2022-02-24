@@ -1,0 +1,25 @@
+@import "bootstrap.min.css";
+@import "rtl.min.css";
+@import "fonts.min.css";
+
+body {
+    font-family: Shabnam, sans-serif;
+    background-color: #353535
+}
+
+.ltr{
+    direction: ltr;
+    text-align: left;
+}
+
+.table td, .table th {
+    vertical-align: middle
+}
+
+.card-header .btn {
+    padding: .05rem .5rem;
+}
+
+.form-control,.form-control:active, .form-control:focus {
+    background-color: #212121;
+}

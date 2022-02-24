@@ -1,0 +1,4 @@
+function popup(e, t, n, o, img = null) {
+    var i = void 0 != window.screenLeft ? window.screenLeft : screen.left, r = void 0 != window.screenTop ? window.screenTop : screen.top, a = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width, s = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height, l = a / 2 - n / 2 + i, c = s / 2 - o / 2 + r, u = img ? window.open(e, t, "scrollbars=yes, width=" + n + ", height=" + o + ", top=" + c + ", left=" + l).document.write('<img src="' + img + '"/>') : window.open(e, t, "scrollbars=yes, width=" + n + ", height=" + o + ", top=" + c + ", left=" + l);
+    window.focus && !img ? u.focus() : u
+}
